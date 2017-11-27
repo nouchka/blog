@@ -1,2 +1,2 @@
 # blog
-https://nouchka.katagena.com
+https://nouchka.katagena.com using gohugo.io
