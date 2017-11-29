@@ -41,5 +41,5 @@ publish: clean theme-clone sync publish-url generate
 		--exclude 'google944c745deab0617a.html/' \
 		--exclude 'robots.txt' \
 		$(TMP_DIRECTORY)/public/ ../githubio/
-	sleep 60
+	sleep 20
 	cd ../githubio/; git pull; git add -A; git st; git commit -m 'New post'; git push
