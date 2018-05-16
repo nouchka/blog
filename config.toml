@@ -5,7 +5,6 @@ title = "Jean-Avit Promis - Actual life and death I've given up on that."
 theme = "hugo-tranquilpeak-theme"
 paginate = 7
 canonifyurls = true
-googleAnalytics = "UA-36917950-1"
 
 [permalinks]
   post = "/:year/:month/:day/:slug/"
