@@ -5,11 +5,8 @@ variables:
 
 pages:
   script:
-    - echo TODO refactor Makefile and use it here
-    - sed -i "s/http:\/\/localhost:8000/https:\/\/nouchka.katagena.com/" config.toml
-    - hugo
-    - mkdir -p public/feed/
-    - cp public/index.xml public/feed/index.html
+    - apk --update add make
+    - make
   artifacts:
     paths:
     - public
