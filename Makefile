@@ -18,8 +18,7 @@ generate:
 	cd $(TMP_DIRECTORY)/; hugo
 
 theme-clone:
-	mkdir -p $(TMP_DIRECTORY)/themes/; \
-		[ -d "$(TMP_DIRECTORY)/themes/hugo-tranquilpeak-theme/" ] || git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git $(TMP_DIRECTORY)/themes/hugo-tranquilpeak-theme/
+	echo "update theme"
 
 test: theme-clone sync generate
 	docker-compose up -d

@@ -1,0 +1,15 @@
+image: registry.gitlab.com/pages/hugo:latest
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+pages:
+  script:
+    - sed -i "s/http:\/\/localhost:8000/https:\/\/nouchka.katagena.com/" config.toml
+    - hugo
+    - cp public/index.xml public/feed/index.html
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
