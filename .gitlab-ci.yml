@@ -5,8 +5,10 @@ variables:
 
 pages:
   script:
+    - echo TODO refactor Makefile and use it here
     - sed -i "s/http:\/\/localhost:8000/https:\/\/nouchka.katagena.com/" config.toml
     - hugo
+    - mkdir -p public/feed/index.html
     - cp public/index.xml public/feed/index.html
   artifacts:
     paths:
