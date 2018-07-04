@@ -2,9 +2,8 @@ version: '3.1'
 
 services:
   blog:
-    image: php:7.0-apache
+    image: nouchka/blog
+    build: .
     container_name: "blog"
     ports:
-      - 8000:80
-    volumes:
-      - /tmp/blog/public/:/var/www/html/
+      - 80:80
