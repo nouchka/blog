@@ -53,6 +53,13 @@ canonifyurls = true
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
   url = "/#about"
 
+[[menu.main]]
+  weight = 6
+  identifier = "rss"
+  name = "RSS"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  url = "/index.xml"
+
 [[menu.links]]
   weight = 1
   identifier = "github"
@@ -88,12 +95,12 @@ canonifyurls = true
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-meetup\"></i>"
   url = "https://www.meetup.com/fr-FR/members/135693752/"
 
-[[menu.misc]]
-  weight = 1
-  identifier = "rss"
-  name = "RSS"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
-  url = "/index.xml"
+[[menu.links]]
+  weight = 6
+  identifier = "firefox"
+  name = "I Use Firefox"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-firefox\"></i>"
+  url = "https://www.mozilla.org/firefox/this-browser-comes-highly-recommended/?utm_source=devs-for.firefox.com&utm_medium=referral&utm_campaign=devs-for-firefox&utm_content=I-Use-Firefox"
 
 [params]
   # Customize date format use to render blog post date, categories and other
