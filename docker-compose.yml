@@ -6,4 +6,4 @@ services:
     build: .
     container_name: "blog"
     ports:
-      - 80:80
+      - 8204:80
