@@ -1,5 +1,6 @@
 FROM registry.gitlab.com/pages/hugo:latest as builder
-MAINTAINER Jean-Avit Promis "docker@katagena.com"
+LABEL maintainer="Jean-Avit Promis docker@katagena.com"
+
 LABEL org.label-schema.vcs-url="https://gitlab.com/katagena/blog"
 LABEL version="latest"
 
