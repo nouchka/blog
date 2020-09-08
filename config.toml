@@ -85,8 +85,8 @@ canonifyurls = true
   weight = 4
   identifier = "instagram"
   name = "Instagram"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-instagram\"></i>"
-  url = "https://www.instagram.com/dharmjah/"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
+  url = "https://fr.linkedin.com/in/japromis"
 
 [[menu.links]]
   weight = 5
