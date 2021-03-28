@@ -5,8 +5,7 @@ LABEL org.label-schema.vcs-url="https://gitlab.com/katagena/blog"
 LABEL version="latest"
 
 COPY . /blog/
-RUN apk --update add make hugo && \
-	cd /blog/ && make
+RUN cd /blog/ && hugo
 
 FROM nginx
 COPY --from=builder /blog/public /usr/share/nginx/html

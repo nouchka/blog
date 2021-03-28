@@ -3,10 +3,10 @@ include:
 
 pages:
   stage: build
-  image: registry.gitlab.com/pages/hugo:latest
+  image:
+    name: registry.gitlab.com/pages/hugo:latest
   script:
-    - apk --update add make
-    - make
+    - hugo
   artifacts:
     paths:
     - public
