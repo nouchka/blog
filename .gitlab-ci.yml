@@ -1,26 +1,3 @@
 include:
-  - template: Auto-DevOps.gitlab-ci.yml
-
-pages:
-  stage: build
-  image:
-    name: registry.gitlab.com/pages/hugo:latest
-  script:
-    - hugo
-  artifacts:
-    paths:
-    - public
-  rules:
-    - if: $CI_COMMIT_BRANCH == "master"
-
-build-latest:
-  stage: build
-  image: docker:latest
-  services:
-    - docker:dind
-  script:
-    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
-    - docker build --pull --build-arg CI_PROJECT_URL=$CI_PROJECT_URL --build-arg CI_BUILD_REF=$CI_BUILD_REF -t $CI_REGISTRY_IMAGE .
-    - docker push $CI_REGISTRY_IMAGE
-  rules:
-    - if: $CI_COMMIT_BRANCH == "master"
+  - project: 'katagena/templates'
+    file: 'ci/hugo.yml'
