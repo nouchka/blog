@@ -79,7 +79,7 @@ canonifyurls = true
   identifier = "duolingo"
   name = "Duolingo"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-comment\"></i>"
-  url = "https://www.duolingo.com/dharmjah"
+  url = "https://duome.eu/dharmjah"
 
 [[menu.links]]
   weight = 4
