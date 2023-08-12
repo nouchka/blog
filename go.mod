@@ -1,4 +1,4 @@
-module gitlab.com/epromis/beaumont-blog
+module gitlab.com/japromis/blog
 
 go 1.20
 
