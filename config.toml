@@ -64,7 +64,7 @@ canonifyurls = true
   weight = 1
   identifier = "github"
   name = "GitHub"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-github\"></i>"
   url = "https://github.com/nouchka"
 
 [[menu.links]]
@@ -83,23 +83,23 @@ canonifyurls = true
 
 [[menu.links]]
   weight = 4
-  identifier = "instagram"
-  name = "Instagram"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
+  identifier = "linkedin"
+  name = "Linkedin"
+  pre = "<i class=\"sidebar-button-icon fab fa-linkedin\"></i>"
   url = "https://fr.linkedin.com/in/japromis"
 
 [[menu.links]]
   weight = 5
   identifier = "meetup"
   name = "Meetup"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-meetup\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-meetup\"></i>"
   url = "https://www.meetup.com/fr-FR/members/135693752/"
 
 [[menu.links]]
   weight = 6
   identifier = "firefox"
   name = "I Use Firefox"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-firefox\"></i>"
+  pre = "<i class=\"sidebar-button-icon fab fa-firefox\"></i>"
   url = "https://www.mozilla.org/firefox/this-browser-comes-highly-recommended/?utm_source=devs-for.firefox.com&utm_medium=referral&utm_campaign=devs-for-firefox&utm_content=I-Use-Firefox"
 
 [params]
