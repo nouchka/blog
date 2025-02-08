@@ -1,0 +1,16 @@
+build:
+	hugo
+
+theme-update:
+	git submodule update --remote --merge
+	echo "gitdir: ../../.git/modules/themes/hugo-tranquilpeak-theme" > ./themes/hugo-tranquilpeak-theme/.git
+
+test: theme-update
+	docker run --rm --user="hugo" -v "$$(pwd):/src" -p 1313:1313 --entrypoint=hugo hugomods/hugo:ci server --bind 0.0.0.0 --renderToMemory
+
+publish: build
+	mkdir -p public/feed/
+	cp public/index.xml public/feed/index.html
+
+resize-images:
+	mogrify -resize 800x800 -format webp assets/odt/*.jpg
