@@ -26,33 +26,30 @@ ignoreLogs = ['warning-goldmark-raw-html']
   name = "Home"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
   url = "/"
+
 [[menu.main]]
   weight = 2
   identifier = "categories"
   name = "Categories"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
   url = "/categories"
+
 [[menu.main]]
   weight = 3
   identifier = "tags"
   name = "Tags"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
   url = "/tags"
+
 [[menu.main]]
   weight = 4
   identifier = "archives"
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
   url = "/archives"
-[[menu.main]]
-  weight = 5
-  identifier = "about"
-  name = "About"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/#about"
 
 [[menu.main]]
-  weight = 6
+  weight = 5
   identifier = "rss"
   name = "RSS"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
@@ -74,31 +71,24 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [[menu.links]]
   weight = 3
-  identifier = "duolingo"
-  name = "Duolingo"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-comment\"></i>"
-  url = "https://duome.eu/dharmjah"
-
-[[menu.links]]
-  weight = 4
   identifier = "linkedin"
   name = "Linkedin"
   pre = "<i class=\"sidebar-button-icon fab fa-linkedin\"></i>"
   url = "https://fr.linkedin.com/in/japromis"
 
 [[menu.links]]
-  weight = 5
-  identifier = "meetup"
-  name = "Meetup"
-  pre = "<i class=\"sidebar-button-icon fab fa-meetup\"></i>"
-  url = "https://www.meetup.com/fr-FR/members/135693752/"
-
-[[menu.links]]
-  weight = 6
+  weight = 4
   identifier = "firefox"
   name = "I Use Firefox"
   pre = "<i class=\"sidebar-button-icon fab fa-firefox\"></i>"
   url = "https://www.mozilla.org/firefox/this-browser-comes-highly-recommended/?utm_source=devs-for.firefox.com&utm_medium=referral&utm_campaign=devs-for-firefox&utm_content=I-Use-Firefox"
+
+[[menu.links]]
+  weight = 5
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  url = "/#about"
 
 [params]
   keywords = ["devops", "it"]
